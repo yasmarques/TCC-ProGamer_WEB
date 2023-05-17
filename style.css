@@ -3,59 +3,154 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 /*=================================================================*/
 
 /* Cabeçalho */
 
-.cabecalho{
+html {
+    background: #808080;
+    background: -moz-linear-gradient(top, #808080 0%, #555555 50%, #292929 100%);
+    background: -webkit-linear-gradient(top, #808080 0%, #555555 50%, #292929 100%);
+    background: linear-gradient(to bottom, #808080 0%, #555555 50%, #292929 100%);
+}
+
+.cabecalho {
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -71,24 +166,24 @@ a {
     background-color: #0F0322;
 }
 
-.logo{
+.logo {
     width: fit-content;
     margin-bottom: 0.2%;
     margin-right: 6%;
 }
 
-.link{
+.link {
     font-family: "Press Start 2P", cursive;
     color: #FFF;
     font-size: 1.2rem;
 }
 
-.link:hover{
+.link:hover {
     color: #E7C21F;
     border-bottom: 1px solid #E7C21F;
 }
 
-.menu{
+.menu {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -98,7 +193,26 @@ a {
     gap: 5rem;
 }
 
-.progamer{
+.progamer {
     width: 100%;
     height: 100%;
+}
+
+.download {
+    margin-top: 20%;
+    margin-bottom: 20%;
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+    color: #E7C21F;
+    font-size: 5rem;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: #000;
+}
+
+.botao{
+    color: rgb(255, 255, 255); font-size: 30px; line-height: 30px; padding: 20px; border-radius: 26px; font-family: Georgia, serif; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(rgb(128, 128, 128) 0%, rgb(85, 85, 85) 50%, rgb(41, 41, 41) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block;}
+    .myButton:hover {
+    background: #808080; }
+    .myButton:active {
+    background: #292929; }
 }
